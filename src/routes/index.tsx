@@ -23,7 +23,7 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Daniela Jimenez — UI/UX Designer & CS Student, Chicago" },
+      { title: "Daniela Jimenez - CS Student" },
       {
         name: "description",
         content:
@@ -31,7 +31,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Daniela Jimenez — UI/UX Designer & CS Student, Chicago",
+        content: "Daniela Jimenez - CS Student",
       },
       {
         property: "og:description",

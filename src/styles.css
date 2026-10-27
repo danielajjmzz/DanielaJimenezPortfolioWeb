@@ -8,7 +8,7 @@
  * Design system
  * Light (default): off-white page, white cards, pale-pink panels, hot-pink accent.
  * Dark ("noir"): soft black page, charcoal cards, plum-tinted panels, baby-pink accent.
- * Shape: buttons, chips and tabs are square; cards (20px) and image frames (16px) are rounded.
+ * Shape: buttons, chips and tabs are square; cards (20px) and image frames (5px) are rounded.
  */
 
 @theme inline {
@@ -22,7 +22,7 @@
   --radius-3xl: 0px;
   /* Opt-in rounding for containers. */
   --radius-card: 20px;
-  --radius-frame: 16px;
+  --radius-frame: 5px;
   --radius-tile: 12px;
 
   --font-display: "Playfair Display", Georgia, "Times New Roman", serif;

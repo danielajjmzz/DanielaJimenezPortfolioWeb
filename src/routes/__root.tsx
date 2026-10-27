@@ -77,7 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Daniela Jimenez — UI/UX Designer in Chicago" },
+      { title: "Daniela Jimenez - CS Student" },
       {
         name: "description",
         content:
@@ -123,13 +123,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className="dark" style={{ colorScheme: "dark" }}>
+    <html lang="en" style={{ colorScheme: "light" }}>
       <head>
         <HeadContent />
         <script
           // Dark is the default; switch to light before first paint only if the visitor chose it.
           dangerouslySetInnerHTML={{
-            __html: `try{if(localStorage.getItem("daniela-theme")==="light"){document.documentElement.classList.remove("dark");document.documentElement.style.colorScheme="light"}}catch(e){}`,
+            __html: `try{if(localStorage.getItem("daniela-theme")==="dark"){document.documentElement.classList.add("dark");document.documentElement.style.colorScheme="dark"}}catch(e){}`,
           }}
         />
       </head>
